@@ -1,3 +1,3 @@
 # smach_samples
-#Desc/
-#Usage
+Desc/
+Usage
