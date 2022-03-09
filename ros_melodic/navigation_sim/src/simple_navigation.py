@@ -4,7 +4,7 @@
 # Title: 目的地に向かうだけのNavigation
 # Author: Yusuke Kanazawa
 # Date: 03/08
-# Memo:
+# Memo: 途中で異レギュラーな物体があっても避けません
 #--------------------------------------------
 
 import rospy
@@ -12,9 +12,8 @@ import rosparam
 import actionlib
 from move_base_msgs.msg import MoveBaseAction, MoveBaseGoal
 
-# rosparamで取得した値からsetGoal()でゴールの生成
+# ゴールの生成
 def setGoal(location_param):
-    print("pose= <" + str(location_param) + ">")
     goal = MoveBaseGoal()
     goal.target_pose.header.frame_id = 'map'
     goal.target_pose.header.stamp = rospy.Time.now()
@@ -24,8 +23,9 @@ def setGoal(location_param):
     goal.target_pose.pose.orientation.w = location_param[3]
     return goal
 
+
 def main():
-    # ゴールのパラメータをrosparamで取得
+    # ゴールのパラメータを取得
     location_dict = rosparam.get_param('/navigation_sim/location_dict')
     location = location_dict['table']
     print "get location = " + str(location)
@@ -38,9 +38,23 @@ def main():
 
     # ゴールを生成してアクションサーバにgoalを送信
     goal = setGoal(location)
+    print 'send goal'
     action_client.send_goal(goal)
-    # 結果が返ってくるまで待つ
-    action_client.wait_for_result()
+    print 'During navigation ...'
+
+    # Navigationの状態を取得して状況に応じて結果を出力
+    while not rospy.is_shutdown():
+        state = action_client.get_state()
+        rospy.sleep(0.2)
+        if state == 3:
+            rospy.loginfo('Success!!')
+            break
+        elif state == 4:
+            rospy.loginfo('Failed')
+            break
+        else:
+            pass
+
 
 if __name__ == '__main__':
     rospy.init_node('simple_navigation')
