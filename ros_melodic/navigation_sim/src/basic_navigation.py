@@ -20,8 +20,6 @@ class BasicNavigation():
     def __init__(self):
         # Action
         self.ac = actionlib.SimpleActionClient('/move_base', MoveBaseAction)
-        # Publisher
-        self.crloc_pub = rospy.Publisher('/current_location', String, queue_size = 1)
         # Service
         self.clear_costmap = rospy.ServiceProxy('/move_base/clear_costmaps', Empty)
         # Value
@@ -66,7 +64,6 @@ class BasicNavigation():
             state = self.ac.get_state()
             if state == 3:
                 rospy.loginfo('Navigation Success!!')
-                self.crloc_pub.publish(self.location_name)
                 return True
             elif state == 4:
                 rospy.loginfo('Navigation Failed ...')
