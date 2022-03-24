@@ -11,7 +11,7 @@
 
 - ### [door_open2.py]
   >プロジェクトが作った自作モジュールを用いて、指定した速度と距離で走らせるプログラム
-https://github.com/KIT-Happy-Robot/happymimi_apps.git
+
 - ### [enter_server2.py]
   >door_open2.py をサービスサーバーに書き換えたもの
 ## srv
