@@ -15,6 +15,8 @@
 - ### [enter_server2.py]
   >door_open2.py をサービスサーバーに書き換えたもの
 ## srv
+- ### [specify_value.srv]
+  >enter_server.py,enter_server2.pyで使用するsrvファイル
 
 # コード解説
 ## door_open1.py　コード解説
