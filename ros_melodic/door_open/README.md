@@ -3,7 +3,7 @@
 実機班の新入生教育のdoor_openの参考例
 # Description
 ## src
-- ### [door_open1.py]
+- ### [door_open1.py](https://github.com/KIT-Happy-Robot/mc_education/blob/main/door_open/src/door_open1.py)
   >速度と距離から目標タイムを計測し、目標タイム内で走らせるプログラム
   
 - ### [enter_server.py]
@@ -11,7 +11,7 @@
 
 - ### [door_open2.py]
   >プロジェクトが作った自作モジュールを用いて、指定した速度と距離で走らせるプログラム
-
+https://github.com/KIT-Happy-Robot/happymimi_apps.git
 - ### [enter_server2.py]
   >door_open2.py をサービスサーバーに書き換えたもの
 ## srv
