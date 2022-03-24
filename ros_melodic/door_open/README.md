@@ -63,7 +63,8 @@ $ rosrun door_open enter_server.py
 距離`distance`と速度`velocity`を指定
 ```
 $ rosservice call /door_open_server "distance: 0.0 velocity: 0.0"
-`⚠注意 velocity　は0.2[m/s]にしましょう。衝突の恐れあり。``
+`⚠注意 velocity　は0.2[m/s]にしましょう。衝突の恐れあり。
+```
 
 ## door_open2.py コード解説
 このノードは、プロジェクトで開発されたbase_controlモジュールを使用して、指定した速度と距離で走らせる。上記で解説したdoor_open1.pyのように時間で制御する必要がなくとてもシンプルなノードだ。  
