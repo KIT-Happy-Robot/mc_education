@@ -28,7 +28,7 @@ door_open1.pyのプログラムをもとに距離と速度をサービスサー�
 ### サービスサーバーの宣言例
 ```
 service = rospy.Service('door_open_server', specify_value, self.execute)
-
+```
 
 
 
