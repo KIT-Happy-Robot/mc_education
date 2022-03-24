@@ -90,7 +90,7 @@ sys.path.insert(0, file_path)
 from base_control import BaseControl
 
 ```
--一連の流れまとめ
+- 一連の流れまとめ
 ```
 import roslib
 
