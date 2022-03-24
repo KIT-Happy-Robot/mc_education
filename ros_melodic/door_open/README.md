@@ -25,7 +25,8 @@
 
 ## enter_server.py コード解説
 door_open1.pyのプログラムをもとに距離と速度をサービスサーバーで取得するプログラムに書き換えた。サービスサーバーの書き方に関しては下記の参考記事欄に残した。  
-### サービスサーバーの宣言例
+### サービスサーバーの宣言例(インスタンス化)
+サービスをインスタンスさせるために、サービス名を`door_open_server`,サービスの型を`specify_value`,サービスの引き返すコールバック関数名を`self.execute`にする場合、下記のように記せば良い。
 ```
 service = rospy.Service('door_open_server', specify_value, self.execute)
 ```
