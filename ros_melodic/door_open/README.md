@@ -3,7 +3,7 @@
 実機班の新入生教育のdoor_openの参考例
 # Description
 ## src
-- ### [door_open1.py](https://github.com/KIT-Happy-Robot/ros_melodic/mc_education/blob/main/door_open/src/door_open1.py)
+- ### [door_open1.py]
   >速度と距離から目標タイムを計測し、目標タイム内で走らせるプログラム
   
 - ### [enter_server.py]
@@ -35,8 +35,19 @@ door_open パッケージの srv の中にある`specify_value`とその出力�
 ```
 service = rospy.Service('door_open_server', specify_value, self.execute)
 ```
-
-
+### CMakeLists.txt の書き換え
+CMakeLists.txt内の58行目からの`add_service_files`〜60行目までコメントアウトを外し下記のように変更する必要がある。
+```
+## Generate services in the 'srv' folder
+add_service_files(
+  DIRECTORY
+  srv
+  FILES
+  specify_value.srv
+)
+```
+上記のように書けたらOK
+⚠注意 あくまでも参考例なのでFILESの部分は作ったファイル名を入れる必要がある。
 
 
 # 参考記事欄
