@@ -55,6 +55,17 @@ add_service_files(
 | Service | /door_open_server | specify_value | float32型: `distance`,`velocity` | bool型: `result` |
 </br>
 
+### コマンドラインから使う
+サービスサーバー /enter_server.py起動  
+```
+$ rosrun door_open enter_server.py
+```
+距離`distance`と速度`velocity`を指定
+別ターミナルを開く
+```
+$ rosservice call /door_open_server "distance: 0.0 velocity: 0.0"
+```
+
 # 参考記事欄
 *時間計測に関する参考記事*
 [pythonでストップウォッチをつくろう 参照日 2022/3/24](https://python-muda.com/python/python-stopwatch/)
