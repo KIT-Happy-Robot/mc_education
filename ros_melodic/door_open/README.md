@@ -3,7 +3,7 @@
 実機班の新入生教育のdoor_openの参考例
 # Description
 ## src
-- ### [door_open1.py](./ros_melodic/door_open/door_open1.py)
+- ### [door_open1.py](./ros_melodic/door_open/src/door_open1.py)
   >速度と距離から目標タイムを計測し、目標タイム内で走らせるプログラム
 
 # コード解説
