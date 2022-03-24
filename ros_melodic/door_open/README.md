@@ -93,7 +93,6 @@ from base_control import BaseControl
 - 一連の流れまとめ
 ```
 import roslib
-
 import sys
 file_path = roslib.packages.get_pkg_dir('happymimi_telop') + '/src/'
 sys.path.insert(0, file_path)
