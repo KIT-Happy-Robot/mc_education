@@ -49,6 +49,11 @@ add_service_files(
 上記のように書けたらOK
 ⚠注意 あくまでも参考例なのでFILESの部分は作ったファイル名を入れる必要がある。
 
+### Usage
+|Communication|Name|Type|Request|Result|
+| :---: | :---: | :---: | :---: | :---: |
+| Service | /door_open_server | specify_value | float32型: `distance`,`velocity` | bool型: `result` |
+</br>
 
 # 参考記事欄
 *時間計測に関する参考記事*
