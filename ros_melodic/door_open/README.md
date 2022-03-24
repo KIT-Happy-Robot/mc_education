@@ -29,7 +29,7 @@ door_open1.pyのプログラムをもとに距離と速度をサービスサー�
 ```
 from door_open.srv import specify_value, specify_valueResponse
 ```
-door_open パッケージの srv の中にある`specify_value'とその出力に関する`specify_valueResponse'をインポートしている。
+door_open パッケージの srv の中にある`specify_value`とその出力に関する`specify_valueResponse'をインポートしている。
 ### サービスサーバーの宣言例(インスタンス化)
 サービスをインスタンスさせるために、サービス名を`door_open_server`,サービスの型を`specify_value`,サービスの引き返すコールバック関数名を`self.execute`とした場合、下記のように記せば良い。
 ```
