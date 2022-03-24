@@ -22,9 +22,10 @@
 ## door_open1.py　コード解説
 現状独自のモジュールを使用しなければ、指定した速度と距離を走らせることが出来ない。そのため、今回のプログラムは時速の計測を用いて、進む速度と距離から目標タイムを計測し、目標タイムに到達したときにプログラムを終了させるプログラムだ。  
 今回はtimeモジュールを用いて、時間計測を行った。しかし、機体が止まっていても時間は進み続けるため,かくブロックごとに時間の修正図った。詳細はプログラム内に書きの残した。また、時間計測に関しては下記内容を参考にした。  
-[pythonでストップウォッチをつくろう 参照日 2022/3/24](https://python-muda.com/python/python-stopwatch/)
 
-## enter_server.py コード解説
+# 参考記事
+*時間計測に関する参考記事*
+[pythonでストップウォッチをつくろう 参照日 2022/3/24](https://python-muda.com/python/python-stopwatch/)
 
 *サービスサーバーの書き方参考記事*
 [サービスの書き方 参照日 2022/3/24](https://raspimouse-sim-tutorial.gitbook.io/project/ros_tutorial/how_to_write_service)
