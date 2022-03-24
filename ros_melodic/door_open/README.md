@@ -70,10 +70,10 @@ $ rosservice call /door_open_server "distance: 0.0 velocity: 0.0"
 ## door_open2.py コード解説
 このノードは、プロジェクトで開発されたbase_controlモジュールを使用して、指定した速度と距離で走らせる。上記で解説したdoor_open1.pyのように時間で制御する必要がなくとてもシンプルなノードだ。  
 ⚠注意 下記のリポジトリの git clone が必要だ。  
-[今回使用したリポジトリ](https://github.com/KIT-Happy-Robot/happymimi_apps.git)
+[今回使用したリポジトリ](https://github.com/KIT-Happy-Robot/happymimi_apps.git)  
 *今回使用したメソッド*
 - translateDist(dist, speed)  
-> 前進、後進の処理を実行し、第一引数は進行距離[m], 第二引数は並進速度  [m/s]となっている。
+> 前進、後進の処理を実行し、第一引数は進行距離[m], 第二引数は並進速度  [m/s]となっている。  
 > ⚠注意 並進速度は0.2[m/s]にしましょう。衝突の恐れあり。
 
 # 参考記事欄
