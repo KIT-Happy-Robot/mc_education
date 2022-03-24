@@ -24,12 +24,18 @@
 今回はtimeモジュールを用いて、時間計測を行った。しかし、機体が止まっていても時間は進み続けるため,かくブロックごとに時間の修正図った。詳細はプログラム内に書きの残した。また、時間計測に関しては下記の参考記事欄に残した。  
 
 ## enter_server.py コード解説
-door_open1.pyのプログラムをもとに距離と速度をサービスサーバーで取得するプログラムに書き換えた。サービスサーバーの書き方に関しては下記の参考記事欄に残した。  
+door_open1.pyのプログラムをもとに距離と速度をサービスサーバーで取得するプログラムに書き換えた。サービスサーバーの書き方に関しては下記の参考記事欄に残し、コードの重要な部分だけ下記に解説を残した。
+### サービスのインポート
+```
+from door_open.srv import specify_value, specify_valueResponse
+```
+door_open パッケージの srv の中にある`specify_value'とその出力に関する`specify_valueResponse'をインポートしている。
 ### サービスサーバーの宣言例(インスタンス化)
-サービスをインスタンスさせるために、サービス名を`door_open_server`,サービスの型を`specify_value`,サービスの引き返すコールバック関数名を`self.execute`にする場合、下記のように記せば良い。
+サービスをインスタンスさせるために、サービス名を`door_open_server`,サービスの型を`specify_value`,サービスの引き返すコールバック関数名を`self.execute`とした場合、下記のように記せば良い。
 ```
 service = rospy.Service('door_open_server', specify_value, self.execute)
 ```
+
 
 
 
