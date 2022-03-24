@@ -7,6 +7,8 @@
 
 ## ros_melodic
 ROS melodicに対応した教育用パッケージが入っています。
+- ### [door_open](./ros_melodic/door_open)
+  > 前方のドアや障害物の対応に関する教育用パッケージ
 
 - ### [navigation](./ros_melodic/navigation)
   > ロボットの自律走行に関する教育用パッケージ
