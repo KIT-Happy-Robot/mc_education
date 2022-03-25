@@ -125,10 +125,51 @@ self.base_control = BaseControl()
 self.base_control.translateDist(dist, speed)
 ```
 
-#
+# enter_server2.py コード解説
+door_open2.py のプログラムをもとに距離と速度をサービスサーバーで取得するプログラムに書き換えた。サービスサーバーの書き方に関しては下記の参考記事欄に残し、コードの重要な部分だけ下記に解説を残した。
 
+### サービスのインポート
+```
+from door_open.srv import specify_value, specify_valueResponse
+```
+door_open パッケージの srv の中にある`specify_value`とその出力に関する`specify_valueResponse`をインポートしている。
 
+### サービスサーバーの宣言例(インスタンス化)
+サービスをインスタンスさせるために、サービス名を`door_open2_server`,サービスの型を`pecify_value`,サービスの引き返すコールバック関数名を`self.execute`とした場合、下記のように記せば良い。
+```
+service = rospy.Service('door_open2_server', specify_value, self.execute)
+```
 
+### CMakeLists.txt の書き換え
+CMakeLists.txt内の58行目からの`add_service_files`〜60行目までコメントアウトを外し下記のように変更する必要がある。
+```
+## Generate services in the 'srv' folder
+add_service_files(
+  DIRECTORY
+  srv
+  FILES
+  specify_value.srv
+)
+```
+上記のように書けたらOK  
+⚠注意 あくまでも参考例なのでFILESの部分は作ったファイル名を入れる必要がある。
+
+### Usage
+|Communication|Name|Type|Request|Result|
+| :---: | :---: | :---: | :---: | :---: |
+| Service | /door_open2_server | specify_value | float32型: `distance`,`velocity` | bool型: `result` |
+</br>
+
+### コマンドラインから使う
+サービスサーバー /enter_server.py起動  
+```
+$ rosrun door_open enter_server2.py
+```
+距離`distance`と速度`velocity`を指定
+```
+$ rosservice call /door_open2_server "distance: 0.0 velocity: 0.0"
+```
+⚠経験者は語る velocity は0.2[m/s]にしましょう。衝突の恐れあり。
 
 # 参考記事欄
 *時間計測に関する参考記事*  
