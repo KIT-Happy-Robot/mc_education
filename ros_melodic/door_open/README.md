@@ -185,11 +185,12 @@ $ rosservice call /door_open2_server "distance: 0.0 velocity: 0.0"
 
 # 参考記事欄
 
-*足回りについての参考記事*
+*足回りについての参考記事*  
 [ROSの勉強 第10弾 : 移動-Twist 参照日 2022//3/25](https://qiita.com/Yuya-Shimizu/items/f6afb00fd37019540ca5)
 
-*センシングについての参考記事*
+*センシングについての参考記事*  
 [ROSの勉強 第11弾：センシング-LaserScan 参照日 2022/3/25](https://qiita.com/Yuya-Shimizu/items/413b57b0305597be35be)
+
 *時間計測に関する参考記事*  
 [pythonでストップウォッチをつくろう 参照日 2022/3/24](https://python-muda.com/python/python-stopwatch/)
 
