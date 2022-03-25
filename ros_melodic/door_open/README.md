@@ -78,7 +78,7 @@ $ rosservice call /door_open_server "distance: 0.0 velocity: 0.0"
 - translateDist(dist, speed)  
 > 前進、後進の処理を実行し、第一引数は進行距離[m], 第二引数は並進速度  [m/s]となっている。  
 > ⚠経験者は語る 並進速度は0.2[m/s]にしましょう。衝突の恐れあり  
-
+以降の内容はPythonを理解しているものは飛ばしても良い
 *base_controlモジュールの使い方*
 - 1.パッケージのパスの取得
 ```
@@ -92,7 +92,7 @@ sys.path.insert(0, file_path)
 from base_control import BaseControl
 
 ```
-- 一連の流れまとめ
+- 3.一連の流れまとめ
 ```
 import roslib
 import sys
@@ -102,6 +102,7 @@ from base_control import BaseControl
 ```
 これで、base_controlモジュールを使えるようになる  
 なお参考にした記事は下記の参考記事欄に残した。  
+*モジュールの使い方*
 
 
 # 参考記事欄
