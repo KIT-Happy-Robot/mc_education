@@ -132,7 +132,7 @@ from base_control import BaseControl
 なお参考にした記事は下記に残した。  
 
 *ROS パッケージのパスに関する参考記事*  
-[ROS プログラムからパッケージのパス取得 (Python/C++) 参照日 2022/3/24](https://qiita.com/hoshianaaa/item/60b2f5b266abcfbef368)
+[ROS プログラムからパッケージのパス取得 (Python/C++) 参照日 2022/3/24](https://qiita.com/hoshianaaa/items/60b2f5b266abcfbef368)
 
 *自作モジュールの呼び出し参考記事*  
 [ROSパッケージから自作pythonモジュールを呼び出す 参照日 2022/3/24](https://qiita.com/mu-777/items/b69473c6f652ea19c3d1)
@@ -214,7 +214,7 @@ $ rosservice call /door_open2_server "distance: 0.0 velocity: 0.0"
 [サービスの書き方 参照日 2022/3/24](https://raspimouse-sim-tutorial.gitbook.io/project/ros_tutorial/how_to_write_service)
 
 *ROS パッケージのパスに関する参考記事*  
-[ROS プログラムからパッケージのパス取得 (Python/C++) 参照日 2022/3/24](https://qiita.com/hoshianaaa/item/60b2f5b266abcfbef368)
+[ROS プログラムからパッケージのパス取得 (Python/C++) 参照日 2022/3/24](https://qiita.com/hoshianaaa/items/60b2f5b266abcfbef368)
 
 *自作モジュールの呼び出し参考記事*  
 [ROSパッケージから自作pythonモジュールを呼び出す 参照日 2022/3/24](https://qiita.com/mu-777/items/b69473c6f652ea19c3d1)
