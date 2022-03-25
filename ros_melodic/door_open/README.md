@@ -109,9 +109,8 @@ from base_control import BaseControl
 ```
 これで、base_controlモジュールを使えるようになる  
 なお参考にした記事は下記の参考記事欄に残した。  
--
 
-*モジュールの使い方*
+[モジュールの使い方]
 - 1.import したモジュールの呼び出し
 ```
 self.base_control = BaseControl()
