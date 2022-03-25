@@ -124,6 +124,8 @@ self.base_control = BaseControl()
 ```
 self.base_control.translateDist(dist, speed)
 ```
+base_controlモジュールのメソッドにはrotateAngleもある。  
+これはマスターを書くときに必要になっていくので、ここでbase_controlモジュールの使い方をマスターしとくと得だ
 
 # enter_server2.py コード解説
 door_open2.py のプログラムをもとに距離と速度をサービスサーバーで取得するプログラムに書き換えた。サービスサーバーの書き方に関しては下記の参考記事欄に残し、コードの重要な部分だけ下記に解説を残した。
