@@ -34,7 +34,7 @@ from door_open.srv import specify_value, specify_valueResponse
 ```
 door_open パッケージの srv の中にある`specify_value`とその出力に関する`specify_valueResponse'をインポートしている。
 ### サービスサーバーの宣言例(インスタンス化)
-サービスをインスタンスさせるために、サービス名を`door_open_server`,サービスの型を`specify_value`,サービスの引き返すコールバック関数名を`self.execute`とした場合、下記のように記せば良い。
+サービスをインスタンスさせるために、サービス名を`door_open_server`,サービスの型を`pecify_value`,サービスの引き返すコールバック関数名を`self.execute`とした場合、下記のように記せば良い。
 ```
 service = rospy.Service('door_open_server', specify_value, self.execute)
 ```
@@ -49,7 +49,7 @@ add_service_files(
   specify_value.srv
 )
 ```
-上記のように書けたらOK
+上記のように書けたらOK  
 ⚠注意 あくまでも参考例なのでFILESの部分は作ったファイル名を入れる必要がある。
 
 ### Usage
