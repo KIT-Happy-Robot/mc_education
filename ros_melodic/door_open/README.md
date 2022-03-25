@@ -1,6 +1,8 @@
 # door_open
 # Overview
-実機班の新入生教育のdoor_openの参考例
+実機班の新入生教育のdoor_openの参考例  
+扉が開いたら前に進むノードを書く  
+⚠経験者は語る velocity は0.2[m/s]にしましょう。 衝突の恐れあり
 # Description
 ## src
 - ### [door_open1.py]
@@ -99,7 +101,8 @@ sys.path.insert(0, file_path)
 from base_control import BaseControl
 ```
 これで、base_controlモジュールを使えるようになる  
-なお参考にした記事は下記の参考記事欄に残した。
+なお参考にした記事は下記の参考記事欄に残した。  
+
 
 # 参考記事欄
 *時間計測に関する参考記事*  
