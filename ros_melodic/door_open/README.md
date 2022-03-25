@@ -1,9 +1,12 @@
 # door_open
+
 # Overview
 実機班の新入生教育のdoor_openの参考例  
 扉が開いたら前に進むノードを書く  
 ⚠経験者は語る velocity は0.2[m/s]にしましょう。 衝突の恐れあり
+
 # Description
+
 ## src
 - ### [door_open1.py]
   >速度と距離から目標タイムを計測し、目標タイム内で走らせるプログラム
@@ -16,6 +19,7 @@
 
 - ### [enter_server2.py]
   >door_open2.py をサービスサーバーに書き換えたもの
+
 ## srv
 - ### [specify_value.srv]
   >enter_server.py,enter_server2.pyで使用するsrvファイル
@@ -28,16 +32,19 @@
 
 ## enter_server.py コード解説
 door_open1.py のプログラムをもとに距離と速度をサービスサーバーで取得するプログラムに書き換えた。サービスサーバーの書き方に関しては下記の参考記事欄に残し、コードの重要な部分だけ下記に解説を残した。
+
 ### サービスのインポート
 ```
 from door_open.srv import specify_value, specify_valueResponse
 ```
 door_open パッケージの srv の中にある`specify_value`とその出力に関する`specify_valueResponse`をインポートしている。
+
 ### サービスサーバーの宣言例(インスタンス化)
 サービスをインスタンスさせるために、サービス名を`door_open_server`,サービスの型を`pecify_value`,サービスの引き返すコールバック関数名を`self.execute`とした場合、下記のように記せば良い。
 ```
 service = rospy.Service('door_open_server', specify_value, self.execute)
 ```
+
 ### CMakeLists.txt の書き換え
 CMakeLists.txt内の58行目からの`add_service_files`〜60行目までコメントアウトを外し下記のように変更する必要がある。
 ```
@@ -78,7 +85,7 @@ $ rosservice call /door_open_server "distance: 0.0 velocity: 0.0"
 - translateDist(dist, speed)  
 > 前進、後進の処理を実行し、第一引数は進行距離[m], 第二引数は並進速度  [m/s]となっている。  
 > ⚠経験者は語る 並進速度は0.2[m/s]にしましょう。衝突の恐れあり  
-以降の内容はPythonを理解しているものは飛ばしても良い
+以降の内容はPythonを理解しているものは飛ばしても良い  
 *base_controlモジュールの使い方*
 - 1.パッケージのパスの取得
 ```
@@ -102,7 +109,19 @@ from base_control import BaseControl
 ```
 これで、base_controlモジュールを使えるようになる  
 なお参考にした記事は下記の参考記事欄に残した。  
+
 *モジュールの使い方*
+- 1.import したモジュールの呼び出し
+```
+self.base_control = BaseControl()
+```
+- 2.メソッドを呼び出す  
+今回使用するメソッドは、translateDist(dist, speed)なので
+```
+self.base_control.translateDist(dist, speed)
+```
+
+
 
 
 # 参考記事欄
