@@ -28,6 +28,16 @@
 - ### [specify_value.srv]
   >enter_server.py,enter_server2.pyで使用するsrvファイル
 
+# 導入編
+今回作成するdoor_openのノードに必要な、足回りやセンシングの使い方については、各ノードにあるので参考にすると良い。  
+また、足回りやセンシングの使い方について参考にした記事を下記に残した。  
+
+*足回りについての参考記事*
+[ROSの勉強 第10弾 : 移動-Twist 参照日 2022//3/25](https://qiita.com/Yuya-Shimizu/items/f6afb00fd37019540ca5)
+
+*センシングについての参考記事*
+[ROSの勉強 第11弾：センシング-LaserScan 参照日 2022/3/25](https://qiita.com/Yuya-Shimizu/items/413b57b0305597be35be)
+
 # コード解説
 ## door_open1.py　コード解説
 現状独自のモジュールを使用しなければ、指定した速度と距離を走らせることが出来ない。そのため、今回のプログラムは時速の計測を用いて、進む速度と距離から目標タイムを計測し、目標タイムに到達したときにプログラムを終了させるプログラムにした。  
@@ -174,6 +184,12 @@ $ rosservice call /door_open2_server "distance: 0.0 velocity: 0.0"
 ⚠経験者は語る velocity は0.2[m/s]にしましょう。衝突の恐れあり。
 
 # 参考記事欄
+
+*足回りについての参考記事*
+[ROSの勉強 第10弾 : 移動-Twist 参照日 2022//3/25](https://qiita.com/Yuya-Shimizu/items/f6afb00fd37019540ca5)
+
+*センシングについての参考記事*
+[ROSの勉強 第11弾：センシング-LaserScan 参照日 2022/3/25](https://qiita.com/Yuya-Shimizu/items/413b57b0305597be35be)
 *時間計測に関する参考記事*  
 [pythonでストップウォッチをつくろう 参照日 2022/3/24](https://python-muda.com/python/python-stopwatch/)
 
