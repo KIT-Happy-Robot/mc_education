@@ -12,20 +12,20 @@
 # Description
 
 ## src
-- ### [door_open1.py](https://github.com/Happy-wada/doropen_pkg/blob/master/src/publisher.py)
+- ### [door_open1.py](https://github.com/KIT-Happy-Robot/mc_education/blob/main/ros_melodic/door_open/src/door_open1.py)
   >速度と距離から目標タイムを計測し、目標タイム内で走らせるプログラム
   
-- ### [enter_server.py]
+- ### [enter_server.py](https://github.com/KIT-Happy-Robot/mc_education/blob/main/ros_melodic/door_open/src/enter_server.py)
   >door_open1.py をサービスサーバーに書き換えたもの
 
-- ### [door_open2.py]
+- ### [door_open2.py](https://github.com/KIT-Happy-Robot/mc_education/blob/main/ros_melodic/door_open/src/door_open2.py)
   >プロジェクトが開発したbase_controlモジュールを用いて、指定した速度と距離で走らせるプログラム
 
-- ### [enter_server2.py]
+- ### [enter_server2.py](https://github.com/KIT-Happy-Robot/mc_education/blob/main/ros_melodic/door_open/src/enter_server2.py)
   >door_open2.py をサービスサーバーに書き換えたもの
 
 ## srv
-- ### [specify_value.srv]
+- ### [specify_value.srv](https://github.com/KIT-Happy-Robot/mc_education/blob/main/ros_melodic/door_open/srv/specify_value.srv)
   >enter_server.py,enter_server2.pyで使用するsrvファイル
 
 # 目次
