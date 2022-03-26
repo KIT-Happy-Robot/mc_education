@@ -128,6 +128,9 @@ $ rosservice call /door_open_server "distance: 0.0 velocity: 0.0"
 
 [今回使用したリポジトリ](https://github.com/KIT-Happy-Robot/happymimi_apps.git)  
 
+*今回使用したソースコード*  
+[base_control.py](https://github.com/KIT-Happy-Robot/happymimi_apps/blob/develop/happymimi_teleop/src/base_control.py)
+
 *今回使用したメソッド*
 - translateDist(dist, speed)  
 > 前進、後進の処理を実行し、第一引数は進行距離[m], 第二引数は並進速度  [m/s]となっている。  
