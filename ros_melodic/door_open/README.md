@@ -1,3 +1,5 @@
+![SPM is supported](https://img.shields.io/badge/mc_education-door_open-orange)
+
 # door_open
 
 # Overview
@@ -248,4 +250,4 @@ $ rosservice call /door_open2_server "distance: 0.0 velocity: 0.0"
 *自作モジュールの呼び出し参考記事*  
 [ROSパッケージから自作pythonモジュールを呼び出す 参照日 2022/3/24](https://qiita.com/mu-777/items/b69473c6f652ea19c3d1)
 
-(https://badges.pufler.dev/commits/{all}/{Happy-wada})
+
