@@ -12,7 +12,7 @@
 # Description
 
 ## src
-- ### [door_open1.py]
+- ### [door_open1.py](https://github.com/Happy-wada/doropen_pkg/blob/master/src/publisher.py)
   >速度と距離から目標タイムを計測し、目標タイム内で走らせるプログラム
   
 - ### [enter_server.py]
