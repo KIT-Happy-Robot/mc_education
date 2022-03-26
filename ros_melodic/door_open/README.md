@@ -1,4 +1,4 @@
-![SPM is supported](https://img.shields.io/badge/mc_education-door_open-orange)
+**![SPM is supported](https://img.shields.io/badge/mc_education-door_open-orange)**
 
 # door_open
 
