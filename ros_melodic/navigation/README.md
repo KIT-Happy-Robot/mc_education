@@ -40,13 +40,13 @@ roscd turtlebot_navigation/launch
 vim amcl_demo.launch
 ```
 
-15行目から変更していきます。
+15行目から変更していきます。 </br>
 変更前
 
-```{r, attr.source = ".numberLines startFrom='14'", attr.output = ".numberLines startFrom='14'", result='hold'}
-<!-- Map server -->
-<arg name="map_file" default="$(env TURTLEBOT_MAP_FILE)"/>
-<node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
+```
+<span style="color: grey; ">14</span> <!-- Map server -->
+15 <arg name="map_file" default="$(env TURTLEBOT_MAP_FILE)"/>
+16 <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
 ```
 
 
