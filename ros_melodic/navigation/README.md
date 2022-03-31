@@ -24,7 +24,7 @@ cd ~/catkin_ws/src
 curl -sLf https://raw.githubusercontent.com/gaunthan/Turtlebot2-On-Melodic/master/install_basic.sh | bash
 catkin build
 ```
-</br>
+
 今入れたパッケージ軍のパスは以下のようになっています。 </br>
 / home / user / catkin_ws / src / src / **パッケージ群** </br>
 /src/srcとなっているのが気持ち悪いので以下コマンドでフォルダ名を変更してください。
@@ -35,3 +35,22 @@ mv src turtlebot_pkgs
 ````
 
 ### /amcl_demo.launchの変更
+/amcl_demo.launchを開いてください
+
+```
+roscd turtlebot_navigation/launch
+vim amcl_demo.launch
+```
+
+15行目から変更していきます。
+変更前
+
+```
+14 <!-- Map server -->
+15 <arg name="map_file" default="$(env TURTLEBOT_MAP_FILE)"/>
+16 <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
+```
+
+
+
+```
