@@ -32,7 +32,7 @@ cd ~/catkin_ws/src
 mv src turtlebot_pkgs
 ````
 
-### /amcl_demo.launchの変更
+### / amcl_demo.launchの変更
 /amcl_demo.launchを開いてください
 
 ```
@@ -60,7 +60,7 @@ vim amcl_demo.launch
 19  <rosparam file="$(arg location_file)" command="load" ns="/navigation/location_dict" />
 ```
 
-### /3dsensor.launchの変更
+### / 3dsensor.launchの変更
 /3dsensor.launchを開いてください
 
 ```
