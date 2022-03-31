@@ -26,3 +26,9 @@ catkin build
 ```
 今入れたパッケージ軍のパスは以下のようになっています。</br>
 / home / user / catkin_ws / src / src / **パッケージ群**
+/src/srcとなっているのが気持ち悪いので以下コマンドでフォルダ名を変更してください。
+
+```
+cd ~/catkin_ws/src
+mv src turtlebot_pkgs
+````
