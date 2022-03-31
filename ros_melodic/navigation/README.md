@@ -3,7 +3,7 @@
 [Turtlebot2](https://www.turtlebot.com/turtlebot2/)を用いて、Navigationを実践的に学ぶことを目的としたパッケージです。
 
 ## Description
-[src](./src)には以下のファイルを含みます。
+[**src**](./src)には以下のファイルを含みます。
 - ### [set_location.py](./src/set_location.py)
 > マップ生成の際に使用すると便利なサービスサーバーです。
 
@@ -12,8 +12,6 @@
 
 - ### [basic_navigation.py](./src/basic_navigation.py)
 > 大会レベルのNavigationを実践的に学ぶことができるプログラムファイルです。
-
-以上、Navigationについて実践的に学ぶことを目的としたパッケージです。
 
 ## Requirement
 
