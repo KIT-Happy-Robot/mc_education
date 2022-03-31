@@ -33,3 +33,5 @@ catkin build
 cd ~/catkin_ws/src
 mv src turtlebot_pkgs
 ````
+
+### /amcl_demo.launchの変更
