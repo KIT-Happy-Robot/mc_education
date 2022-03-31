@@ -59,3 +59,31 @@ vim amcl_demo.launch
 18  <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
 19  <rosparam file="$(arg location_file)" command="load" ns="/navigation/location_dict" />
 ```
+
+### /3dsensor.launchの変更
+/3dsensor.launchを開いてください
+
+```
+roscd turtlebot_bringup/launch
+vim 3dsensor.launch
+```
+
+41行目から変更していきます。 </br>
+変更前
+
+```
+40  <!-- Laserscan topic -->
+41  <arg name="scan_topic" default="scan" />
+```
+
+変更後
+
+```
+40  <!-- Laserscan topic -->
+41  <arg name="scan_topic" default="kinect_scan"/>
+42  <node name="laser_driver" pkg="urg_node" type="urg_node">
+43    <param name="frame_id" value="base_laser_link" />
+44    <param name="angle_min" value="-1.5707963" />
+45    <param name="angle_max" value="1.5707963" />
+46  </node>
+ ```
