@@ -1,3 +1,5 @@
+**![SPM is supported](https://img.shields.io/badge/mc_education-door_open-orange)**
+
 # door_open
 
 # Overview
@@ -12,20 +14,20 @@
 # Description
 
 ## src
-- ### [door_open1.py]
+- ### [door_open1.py](https://github.com/KIT-Happy-Robot/mc_education/blob/main/ros_melodic/door_open/src/door_open1.py)
   >速度と距離から目標タイムを計測し、目標タイム内で走らせるプログラム
   
-- ### [enter_server.py]
+- ### [enter_server.py](https://github.com/KIT-Happy-Robot/mc_education/blob/main/ros_melodic/door_open/src/enter_server.py)
   >door_open1.py をサービスサーバーに書き換えたもの
 
-- ### [door_open2.py]
+- ### [door_open2.py](https://github.com/KIT-Happy-Robot/mc_education/blob/main/ros_melodic/door_open/src/door_open2.py)
   >プロジェクトが開発したbase_controlモジュールを用いて、指定した速度と距離で走らせるプログラム
 
-- ### [enter_server2.py]
+- ### [enter_server2.py](https://github.com/KIT-Happy-Robot/mc_education/blob/main/ros_melodic/door_open/src/enter_server2.py)
   >door_open2.py をサービスサーバーに書き換えたもの
 
 ## srv
-- ### [specify_value.srv]
+- ### [specify_value.srv](https://github.com/KIT-Happy-Robot/mc_education/blob/main/ros_melodic/door_open/srv/specify_value.srv)
   >enter_server.py,enter_server2.pyで使用するsrvファイル
 
 # 目次
@@ -35,7 +37,7 @@
 
 - [導入編](#%E5%B0%8E%E5%85%A5%E7%B7%A8)
 - [コード解説](#%E3%82%B3%E3%83%BC%E3%83%89%E8%A7%A3%E8%AA%AC)
-  - [door_open1.py　コード解説](#door_open1py%E3%80%80%E3%82%B3%E3%83%BC%E3%83%89%E8%A7%A3%E8%AA%AC)
+  - [door_open1.py コード解説](#door_open1py%E3%80%80%E3%82%B3%E3%83%BC%E3%83%89%E8%A7%A3%E8%AA%AC)
   - [enter_server.py コード解説](#enter_serverpy-%E3%82%B3%E3%83%BC%E3%83%89%E8%A7%A3%E8%AA%AC)
     - [サービスのインポート](#%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%81%AE%E3%82%A4%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%88)
     - [サービスサーバーの宣言例(インスタンス化)](#%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%81%AE%E5%AE%A3%E8%A8%80%E4%BE%8B%E3%82%A4%E3%83%B3%E3%82%B9%E3%82%BF%E3%83%B3%E3%82%B9%E5%8C%96)
@@ -127,6 +129,9 @@ $ rosservice call /door_open_server "distance: 0.0 velocity: 0.0"
 ⚠注意 下記のリポジトリの git clone が必要だ。  
 
 [今回使用したリポジトリ](https://github.com/KIT-Happy-Robot/happymimi_apps.git)  
+
+*今回使用したソースコード*  
+[base_control.py](https://github.com/KIT-Happy-Robot/happymimi_apps/blob/develop/happymimi_teleop/src/base_control.py)
 
 *今回使用したメソッド*
 - translateDist(dist, speed)  
@@ -244,4 +249,5 @@ $ rosservice call /door_open2_server "distance: 0.0 velocity: 0.0"
 
 *自作モジュールの呼び出し参考記事*  
 [ROSパッケージから自作pythonモジュールを呼び出す 参照日 2022/3/24](https://qiita.com/mu-777/items/b69473c6f652ea19c3d1)
+
 
