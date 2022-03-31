@@ -24,6 +24,7 @@ cd ~/catkin_ws/src
 curl -sLf https://raw.githubusercontent.com/gaunthan/Turtlebot2-On-Melodic/master/install_basic.sh | bash
 catkin build
 ```
+</br>
 今入れたパッケージ軍のパスは以下のようになっています。</br>
 / home / user / catkin_ws / src / src / **パッケージ群**
 /src/srcとなっているのが気持ち悪いので以下コマンドでフォルダ名を変更してください。
