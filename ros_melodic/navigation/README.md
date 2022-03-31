@@ -17,6 +17,10 @@
 
 ## Requirement
 
+### Turtlebot2パッケージ群のインストール
+
 ```
+cd ~/catkin_ws/src
 curl -sLf https://raw.githubusercontent.com/gaunthan/Turtlebot2-On-Melodic/master/install_basic.sh | bash
+catkin build
 ```
