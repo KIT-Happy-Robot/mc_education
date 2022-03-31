@@ -36,14 +36,19 @@
 
 
 
-### Usage
+# Usage
+
+## enter_server.py 
+
 |Communication|Name|Type|Request|Result|
 | :---: | :---: | :---: | :---: | :---: |
 | Service | /door_open_server | specify_value | float32型: `distance`,`velocity` | bool型: `result` |
 </br>
 
 ### コマンドラインから使う
+
 サービスサーバー /enter_server.py起動  
+
 ```
 $ rosrun door_open enter_server.py
 ```
@@ -54,14 +59,17 @@ $ rosservice call /door_open_server "distance: 0.0 velocity: 0.0"
 ⚠経験者は語る velocity は0.2[m/s]にしましょう。衝突の恐れあり。
 
 
-### Usage
+## enter_server2.py  
+
 |Communication|Name|Type|Request|Result|
 | :---: | :---: | :---: | :---: | :---: |
 | Service | /door_open2_server | specify_value | float32型: `distance`,`velocity` | bool型: `result` |
 </br>
 
 ### コマンドラインから使う
+
 サービスサーバー /enter_server.py起動  
+
 ```
 $ rosrun door_open enter_server2.py
 ```
