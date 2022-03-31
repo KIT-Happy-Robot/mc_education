@@ -4,6 +4,9 @@
 # Desc: 障害物に当たらずに自立移動させるノード
 # Date: 2022/03/17
 # Author: Hiroto Washio
+# Memo:
+#     pubMemo:
+#             rostopic pub /input_target std_msgs/String "data; ''"
 #-----------------------------------------------------
 import rospy
 import actionlib
