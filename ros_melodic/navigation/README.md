@@ -1,6 +1,6 @@
 # navigation
 ## Overview
-[kobuki](http://kobuki.yujinrobot.com/about2/)を用いて、Navigationを実践的に学ぶことを目的としたパッケージです。
+[Turtlebot2](https://www.turtlebot.com/turtlebot2/)を用いて、Navigationを実践的に学ぶことを目的としたパッケージです。
 
 ## Description
 [src](./src)には以下のファイルを含みます。
@@ -10,5 +10,13 @@
 - ### [simple_navigation.py](./src/simple_navigation.py)
 > Navigationをするために必要最低限の知識を学べるプログラムファイルです。
 
-- ### [basic_navigation.py](./src/basic_navigation.py
+- ### [basic_navigation.py](./src/basic_navigation.py)
 > 大会レベルのNavigationを実践的に学ぶことができるプログラムファイルです。
+
+以上、Navigationについて実践的に学ぶことを目的としたパッケージです。
+
+## Requirement
+
+```
+curl -sLf https://raw.githubusercontent.com/gaunthan/Turtlebot2-On-Melodic/master/install_basic.sh | bash
+```
