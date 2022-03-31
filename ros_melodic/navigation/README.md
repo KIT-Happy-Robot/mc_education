@@ -44,11 +44,18 @@ vim amcl_demo.launch
 変更前
 
 ```
-<span style="color: grey; ">14</span> <!-- Map server -->
-15 <arg name="map_file" default="$(env TURTLEBOT_MAP_FILE)"/>
-16 <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
+14  <!-- Map server -->
+15  <arg name="map_file" default="$(env TURTLEBOT_MAP_FILE)"/>
+16  <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
 ```
 
+変更後
 
-
+```
+14  <!-- Map server & Load location -->
+15   <arg name="file_name" default="yumeko" />
+16   <arg name="map_file" default="$(find turtlebot_navigation)/maps/$(arg file_name).yaml" />
+17   <arg name="location_file" default="$(find navigation)/location/$(arg file_name).yaml" />
+18   <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
+19   <rosparam file="$(arg location_file)" command="load" ns="/navigation/location_dict" />
 ```
