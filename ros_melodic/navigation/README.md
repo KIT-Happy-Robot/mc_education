@@ -43,10 +43,10 @@ vim amcl_demo.launch
 15行目から変更していきます。
 変更前
 
-```
-## [1] 11 <!-- Map server -->
-15 <arg name="map_file" default="$(env TURTLEBOT_MAP_FILE)"/>
-16 <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
+```{r, attr.source = ".numberLines startFrom='14'", attr.output = ".numberLines startFrom='14'", result='hold'}
+<!-- Map server -->
+<arg name="map_file" default="$(env TURTLEBOT_MAP_FILE)"/>
+<node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
 ```
 
 
