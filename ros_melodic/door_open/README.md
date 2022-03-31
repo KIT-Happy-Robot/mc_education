@@ -30,6 +30,12 @@
 - ### [specify_value.srv](https://github.com/KIT-Happy-Robot/mc_education/blob/main/ros_melodic/door_open/srv/specify_value.srv)
   >enter_server.py,enter_server2.pyで使用するsrvファイル
 
+# Requirement
+
+## door_open2.py enter_server2.pyで使用するモジュールのパッケージ
+
+### [happymimi_apps](https://github.com/KIT-Happy-Robot/happymimi_apps.git)
+
 # Usage
 
 ## enter_server.py 
@@ -73,3 +79,10 @@ $ rosservice call /door_open2_server "distance: 0.0 velocity: 0.0"
 ```
 ⚠経験者は語る velocity は0.2[m/s]にしましょう。衝突の恐れあり。
 
+# 解説
+
+## esaに残したので、見て頂ければ幸いです。  
+
+### [door open 解説]([WIP] ソフト班/実機/教育/新入生教育 実機 door open 解説
+https://kithappyrobot.esa.io/posts/277
+)
