@@ -30,12 +30,6 @@
 - ### [specify_value.srv](https://github.com/KIT-Happy-Robot/mc_education/blob/main/ros_melodic/door_open/srv/specify_value.srv)
   >enter_server.py,enter_server2.pyで使用するsrvファイル
 
-
-
-# コード解説
-
-
-
 # Usage
 
 ## enter_server.py 
