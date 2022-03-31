@@ -63,11 +63,11 @@ class SetLocationServer():
     def saveLocation(self, file_name):
         try:
             param_path = roslib.packages.get_pkg_dir("navigation")
-            map_path = roslib.packages.get_pkg_dir("megarover_samples")
+            map_path = roslib.packages.get_pkg_dir("turtlebot_navigation")
             rospy.set_param('/navigation/location_dict', self.location_dict)
             rosparam.dump_params(param_path + '/location/' + file_name + '.yaml', '/navigation/location_dict')
             print rosparam.get_param('/navigation/location_dict')
-            sp.Popen(['rosrun','map_server','map_saver','-f', map_path + '/map/'+ file_name])
+            sp.Popen(['rosrun','map_server','map_saver','-f', map_path + '/maps/'+ file_name])
             rospy.loginfo("Saved as <" + file_name + ">")
             return True
         except rospy.ROSInterruptException:

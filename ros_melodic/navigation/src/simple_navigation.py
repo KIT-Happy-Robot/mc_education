@@ -3,7 +3,7 @@
 #--------------------------------------------
 # Title: 目的地に向かうだけのNavigation
 # Author: Yusuke Kanazawa
-# Date: 03/08
+# Date: 03/31
 # Memo: 途中で異レギュラーな物体があっても避けません
 #--------------------------------------------
 
@@ -27,7 +27,7 @@ def setGoal(location_param):
 def main():
     # ゴールのパラメータを取得
     location_dict = rosparam.get_param('/navigation/location_dict')
-    location = location_dict['table']
+    location = location_dict['operator']
     print "get location = " + str(location)
 
     # アクションクライアントを生成
