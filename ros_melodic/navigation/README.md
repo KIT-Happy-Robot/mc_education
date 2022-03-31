@@ -45,7 +45,7 @@ vim amcl_demo.launch
 15行目から変更していきます。
 変更前
 
-```
+```{#lst:id python caption="あいさつ"}
 14 <!-- Map server -->
 15 <arg name="map_file" default="$(env TURTLEBOT_MAP_FILE)"/>
 16 <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
