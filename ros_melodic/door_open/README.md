@@ -58,7 +58,6 @@ $ rosservice call /door_open_server "distance: 0.0 velocity: 0.0"
 ```
 ⚠経験者は語る velocity は0.2[m/s]にしましょう。衝突の恐れあり。
 
-
 ## enter_server2.py  
 
 |Communication|Name|Type|Request|Result|
@@ -83,5 +82,5 @@ $ rosservice call /door_open2_server "distance: 0.0 velocity: 0.0"
 
 ## esaに残したので、見て頂ければ幸いです。  
 
-### [ソフト班/実機/教育/新入生教育 実機 door open 解説](https://kithappyrobot.esa.io/posts/277)
+[ソフト班/実機/教育/新入生教育 実機 door open 解説](https://kithappyrobot.esa.io/posts/277)
 
