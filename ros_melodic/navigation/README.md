@@ -25,4 +25,4 @@ curl -sLf https://raw.githubusercontent.com/gaunthan/Turtlebot2-On-Melodic/maste
 catkin build
 ```
 今入れたパッケージ軍のパスは以下のようになっています。</br>
-/home/user/catkin_ws/src/src/**パッケージ群**
+/ home / user / catkin_ws / src / src / **パッケージ群**
