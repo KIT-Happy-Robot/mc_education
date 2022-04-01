@@ -18,7 +18,7 @@ RCJ2018年の競技プログラムのBasic Functionalitiesを実施(基本的な
 # Requirement
 
 ## 今回使用したモジュールのパッケージ
-# 使い方に関しては各パッケージにあるREADME.mdを読むと良いでしょう。  
+### 使い方に関しては各パッケージにあるREADME.mdを読むと良いでしょう。  
 :radioactive:今回はgit cloneする必要はありません  
 
 :point_right:[enter_room](https://github.com/KIT-Happy-Robot/happymimi_apps/tree/develop/enter_room)  
@@ -28,3 +28,9 @@ RCJ2018年の競技プログラムのBasic Functionalitiesを実施(基本的な
 :point_right:[happymimi_teleop](https://github.com/KIT-Happy-Robot/happymimi_apps/tree/develop/happymimi_teleop)
 
 :point_right:[voice_common_pkg](https://github.com/KIT-Happy-Robot/voice_common_pkg)
+
+:point_right:[happymimi_manipulation](https://github.com/KIT-Happy-Robot/happymimi_manipulation)
+
+:point_right:[happymimi_recognition](https://github.com/KIT-Happy-Robot/happymimi_recognition)
+
+
