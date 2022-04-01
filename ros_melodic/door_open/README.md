@@ -36,6 +36,17 @@
 
 ### [happymimi_apps](https://github.com/KIT-Happy-Robot/happymimi_apps.git)
 
+### happymimi_appsのgit clone  
+
+---
+cd ~/catkin_ws/src
+git clone https://github.com/KIT-Happy-Robot/happymimi_apps.git
+catkin build 
+catkin build happymimi_apps
+cd happymimi_apps
+catkin build happymimi_teleop
+---
+
 # Usage
 
 ## enter_server.py 
