@@ -27,7 +27,7 @@ RCJ2018年の競技プログラムのBasic Functionalitiesを実施(基本的な
 
 :point_right:[happymimi_teleop](https://github.com/KIT-Happy-Robot/happymimi_apps/tree/develop/happymimi_teleop)
 
-:point_right:[voice_common_pkg](https://github.com/KIT-Happy-Robot/voice_common_pkg)
+:point_right:[happymimi_voice](https://github.com/KIT-Happy-Robot/happymimi_voice)
 
 :point_right:[happymimi_manipulation](https://github.com/KIT-Happy-Robot/happymimi_manipulation)
 
