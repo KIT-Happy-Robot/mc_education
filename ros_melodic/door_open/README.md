@@ -47,6 +47,24 @@ cd happymimi_apps
 catkin build happymimi_teleop
 ```
 
+### /base_control.pyの変更  
+/base_control.pyを開いてください。
+
+```
+roscd happymimi_teleop/src/
+vim base_control.py
+```
+
+22行目を変更します。  
+変更前  
+```
+22 self.twist_pub = rospy.Publisher('/cmd_vel', Twist, queue_size = 1)
+```
+変更後  
+```
+22   self.twist_pub = rospy.Publisher('/vmegarover/diff_drive_controller/cmd_vel', Twist, queue_size = 1)
+```
+
 # Usage
 
 ## enter_server.py 
