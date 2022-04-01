@@ -109,7 +109,7 @@ $ rosservice call /door_open2_server "distance: 0.0 velocity: 0.0"
 
 # 解説
 
-## ノード内にもコメントを残しましたがもっと詳しい解説が欲しい人は下記にあります！！！  
+## ノード内にもコメントを残しましたがもっと詳しい解説が欲しい人は下記にあります :bangbang:  
 
 :point_right: [ソフト班/実機/教育/新入生教育 実機 door open 解説](https://kithappyrobot.esa.io/posts/277)
 
