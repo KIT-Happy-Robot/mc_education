@@ -20,7 +20,7 @@
 - ### [enter_server.py](https://github.com/KIT-Happy-Robot/mc_education/blob/main/ros_melodic/door_open/src/enter_server.py)
   >door_open1.py をサービスサーバーに書き換えたもの
 
-- ### [door_open2.py](https://github.com/KIT-Happy-Robot/mc_education/blob/main/ros_melodic/door_open/src/door_open2.py)
+- ### :beginner: [door_open2.py](https://github.com/KIT-Happy-Robot/mc_education/blob/main/ros_melodic/door_open/src/door_open2.py)
   >プロジェクトが開発したbase_controlモジュールを用いて、指定した速度と距離で走らせるプログラム
 
 - ### [enter_server2.py](https://github.com/KIT-Happy-Robot/mc_education/blob/main/ros_melodic/door_open/src/enter_server2.py)
