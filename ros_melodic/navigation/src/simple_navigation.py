@@ -27,7 +27,7 @@ def setGoal(location_param):
 def main():
     # ゴールのパラメータを取得
     location_dict = rosparam.get_param('/navigation/location_dict')
-    location = location_dict['operator']
+    location = location_dict['binA']
     print "get location = " + str(location)
 
     # アクションクライアントを生成

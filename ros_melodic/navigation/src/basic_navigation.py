@@ -75,5 +75,5 @@ class BasicNavigation():
 if __name__ == '__main__':
     rospy.init_node('basic_navigation')
     bn = BasicNavigation()
-    result = bn.execute('table')
+    result = bn.execute('operator')
     print result
