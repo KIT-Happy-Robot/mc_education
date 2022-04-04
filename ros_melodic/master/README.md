@@ -79,5 +79,16 @@ rosrun enter_room enter_server.py
 やり方はとても簡単　ミスも減ります  
 是非やってみませんか:roll_eyes:  　　
 
+1. シェルスプリクトを作る
+
+```
+~/catkin_ws/src
+mkdir common
+cd common
+mkdir bashes
+mkdir executions
+```
+
+
 
 
