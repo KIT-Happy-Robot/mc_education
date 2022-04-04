@@ -18,7 +18,7 @@ RCJ2018年の競技プログラムのBasic Functionalitiesを実施(基本的な
 # Requirement
 
 ## 今回使用したモジュールのパッケージ
-### 使い方に関しては各パッケージにあるREADME.mdを読むと良いでしょう。  
+### 使い方に関しては各パッケージにあるREADME.mdを読むと良いでしょう。:bangbang:    
 :radioactive:今回はgit cloneする必要はありません  
 
 :point_right:[enter_room](https://github.com/KIT-Happy-Robot/happymimi_apps/tree/develop/enter_room)  
@@ -32,5 +32,33 @@ RCJ2018年の競技プログラムのBasic Functionalitiesを実施(基本的な
 :point_right:[happymimi_manipulation](https://github.com/KIT-Happy-Robot/happymimi_manipulation)
 
 :point_right:[happymimi_recognition](https://github.com/KIT-Happy-Robot/happymimi_recognition)
+
+
+:point_right:[wdys_bf](https://github.com/happykoya/wdys_bf)
+
+# Usage  
+
+## Basic_Functionalities.py  
+
+### mimiを起こす:robot:  
+```
+basic_launch
+```
+```
+mani_launch
+```
+これでロボットの各機能を使用できる。:kissing_heart:  
+
+### コマンドラインから使う  
+
+仮想環境に入り、bf_conversation.pyを起動  
+
+```
+roscd happymimi_voices  
+cd ../
+source envs/mimienv/bin/activate
+```
+
+
 
 
