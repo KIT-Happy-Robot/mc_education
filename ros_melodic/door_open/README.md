@@ -9,7 +9,7 @@
 解説については自分が必要だと思ったところだけば読めば良い  
 あくまでも参考例なので自作できるなら自作しても良いただし以下の内容は守ってほしい  
 
-***:radioactive: velocity は0.2[m/s]にしましょう。 衝突の恐れあり***
+***:radioactive: velocity は0.2[m/s]にしましょう。 衝突の恐れあり:trollface:***
 
 # Description
 
@@ -105,7 +105,7 @@ $ rosrun door_open enter_server2.py
 ```
 $ rosservice call /door_open2_server "distance: 0.0 velocity: 0.0"
 ```
-:radioactive: 経験者は語る velocity は0.2[m/s]にしましょう。衝突の恐れあり。
+:radioactive: 経験者は語る velocity は0.2[m/s]にしましょう。衝突の恐れあり。:trollface:  
 
 # 解説
 
