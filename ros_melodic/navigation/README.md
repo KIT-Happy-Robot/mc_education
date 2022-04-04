@@ -5,7 +5,7 @@
 ## Description
 [**src**](./src)には以下のファイルを含みます。
 - ### [set_location.py](./src/set_location.py)
-> マップ生成の際に使用すると便利なサービスサーバーです。
+> マップ生成の際に使用すると便利なサービスサーバです。
 
 - ### [simple_navigation.py](./src/simple_navigation.py)
 > Navigationをするために必要最低限の知識を学べるプログラムファイルです。
