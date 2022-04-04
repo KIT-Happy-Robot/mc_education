@@ -57,7 +57,21 @@ mani_launch
 roscd happymimi_voices  
 cd ../
 source envs/mimienv/bin/activate
+rosrun wdys_bf bf_conversation.py
 ```
+
+enter_roomを起動  
+
+```
+rosrun enter_room enter_server.py
+```
+
+ Basic_Functionalities.pyを起動
+ ```
+ rosrun master Basic_Functionalities.py  
+ ```
+ 
+これで競技を始めることができる。:trollface:　　
 
 
 
