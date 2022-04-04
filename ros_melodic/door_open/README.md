@@ -62,7 +62,7 @@ vim base_control.py
 ```
 :ballot_box_with_check: 変更後  
 ```
-22   self.twist_pub = rospy.Publisher('/vmegarover/diff_drive_controller/cmd_vel', Twist, queue_size = 1)
+22 self.twist_pub = rospy.Publisher('/vmegarover/diff_drive_controller/cmd_vel', Twist, queue_size = 1)
 ```
 
 # Usage
