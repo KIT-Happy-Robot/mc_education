@@ -73,6 +73,7 @@ rosrun enter_room enter_server.py
  
 これで競技を始めることができる。:trollface:　　
 
+### bashで管理
 これだけの工程をこなすのは大変だと感じたそこのあなた:thinking:  
 今からでも遅くありません是非、bashを使って楽をしませんか:smirk:    
 やり方はとても簡単　ミスも減ります  
