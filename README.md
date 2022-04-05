@@ -37,7 +37,7 @@ curl -sLf https://raw.githubusercontent.com/gaunthan/Turtlebot2-On-Melodic/maste
 
 今入れたパッケージ軍のパスは以下のようになっています。 </br>
 / home / user / catkin_ws / src / src / **パッケージ群** </br>
-/src/srcとなっているのが気持ち悪いので以下コマンドでフォルダ名を変更してください。
+/ src / src となっているのが気持ち悪いので以下コマンドでフォルダ名を変更してください。
 
 ```
 cd ~/catkin_ws/src
