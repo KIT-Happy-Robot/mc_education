@@ -1,6 +1,7 @@
 # mc_education
 ## Overview
 実機班の教育内容をまとめたROSメタパッケージ
+</br>
 
 ## Description
 以下のパッケージを含みます。
@@ -18,11 +19,14 @@ ROS melodicに対応した教育用パッケージが入っています。
 
 - ### [smach_samples](./ros_melodic/smach_samples)
   > Smachに関する教育用パッケージ
+</br>
 
 ## Requirement
 各パッケージのREADMEをご覧ください。
+</br>
 
 ## Build Enviroment
+</br>
 
 ### Turtlebot2パッケージ群のインストール
 
@@ -96,11 +100,11 @@ vim 3dsensor.launch
 45    <param name="angle_max" value="1.5707963" />
 46  </node>
  ```
-
-### 補足
+</br>
 
 ## Bring Up
 各パッケージのREADMEをご覧ください。
+</br>
 
 ## Usage
 各パッケージのREADMEをご覧ください。
