@@ -103,11 +103,13 @@ vim 3dsensor.launch
 </br>
 ### よくあるエラーへの対処
 よくあるエラー
+
 ```
 ERROR: cannot launch node of type [laptop_battery_monitor/laptop_battery.py]: laptop_battery_monitor
 ```
 
 対処法
+
 ```
 cd ~/catkin_ws/src
 git clone https://github.com/ros-drivers/linux_peripheral_interfaces.git
