@@ -101,6 +101,20 @@ vim 3dsensor.launch
 46  </node>
  ```
 </br>
+### よくあるエラーへの対処
+よくあるエラー
+```
+ERROR: cannot launch node of type [laptop_battery_monitor/laptop_battery.py]: laptop_battery_monitor
+```
+
+対処法
+```
+cd ~/catkin_ws/src
+git clone https://github.com/ros-drivers/linux_peripheral_interfaces.git
+cd ~/catkin_ws/src/linux_peripheral_interfaces
+rm -rf libsensors_monitor
+catkin build
+```
 
 ## Bring Up
 各パッケージのREADMEをご覧ください。
