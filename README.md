@@ -33,7 +33,6 @@ ROS melodicに対応した教育用パッケージが入っています。
 ```
 cd ~/catkin_ws/src
 curl -sLf https://raw.githubusercontent.com/gaunthan/Turtlebot2-On-Melodic/master/install_basic.sh | bash
-catkin build
 ```
 
 今入れたパッケージ軍のパスは以下のようになっています。 </br>
@@ -43,6 +42,7 @@ catkin build
 ```
 cd ~/catkin_ws/src
 mv src turtlebot_pkgs
+catkin build
 ````
 
 ### /amcl_demo.launchの変更
