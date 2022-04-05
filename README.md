@@ -97,6 +97,8 @@ vim 3dsensor.launch
 46  </node>
  ```
 
+### 補足
+
 ## Bring Up
 各パッケージのREADMEをご覧ください。
 
