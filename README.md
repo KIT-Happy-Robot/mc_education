@@ -26,7 +26,7 @@ ROS melodicに対応した教育用パッケージが入っています。
 </br>
 
 ## Build Enviroment
-Kobukiを動かしたい方  👉 [**ROS noetic で Kobuki**](https://kithappyrobot.esa.io/posts/287) </br>
+Kobukiを動かしたい方  👉 [**ROS noeticでKobuki**](https://kithappyrobot.esa.io/posts/287) </br>
 2DLidarを動かしたい方 👉 [**2DLidarを使いたい**](https://kithappyrobot.esa.io/posts/288)
 </br>
 
