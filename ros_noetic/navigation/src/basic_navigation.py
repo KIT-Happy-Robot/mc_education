@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #--------------------------------------------
 # Title: 実装できるレベルのNavigation
@@ -30,7 +30,7 @@ class BasicNavigation():
     def serchLocationName(self, name):
         if name in self.location_dict:
             self.location_name = name
-            print self.location_dict[self.location_name]
+            print(self.location_dict[self.location_name])
             return self.location_dict[self.location_name]
         else:
             rospy.logerr("'" + name + "' doesn't exist.")
@@ -76,4 +76,4 @@ if __name__ == '__main__':
     rospy.init_node('basic_navigation')
     bn = BasicNavigation()
     result = bn.execute('operator')
-    print result
+    print(result)
