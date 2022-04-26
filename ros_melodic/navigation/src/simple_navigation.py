@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #--------------------------------------------
 # Title: 目的地に向かうだけのNavigation
@@ -28,19 +28,19 @@ def main():
     # ゴールのパラメータを取得
     location_dict = rosparam.get_param('/navigation/location_dict')
     location = location_dict['binA']
-    print "get location = " + str(location)
+    print("get location = " + str(location))
 
     # アクションクライアントを生成
     action_client = actionlib.SimpleActionClient('move_base', MoveBaseAction)
     # アクションサーバが起動するまで待つ
-    print 'waiting for server'
+    print('waiting for server')
     action_client.wait_for_server()
 
     # ゴールを生成してアクションサーバにgoalを送信
     goal = setGoal(location)
-    print 'send goal'
+    print('send goal')
     action_client.send_goal(goal)
-    print 'During navigation ...'
+    print('During navigation ...')
 
     # Navigationの状態を取得して状況に応じて結果を出力
     while not rospy.is_shutdown():
