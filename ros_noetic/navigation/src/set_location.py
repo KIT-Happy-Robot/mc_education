@@ -9,7 +9,7 @@ import rospy
 import rosparam
 import roslib.packages
 from tf import TransformListener
-from happymimi_navigation.srv import SetLocation, SetLocationResponse
+from navigation.srv import SetLocation, SetLocationResponse
 
 
 class SetLocationServer():
