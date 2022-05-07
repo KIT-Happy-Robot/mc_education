@@ -7,7 +7,7 @@
 以下のパッケージを含みます。
 
 ### ros_noetic
-ROS melodicに対応した教育用パッケージが入っています。
+ROS noeticに対応した教育用パッケージが入っています。
 - ### [door_open](./ros_noetic/door_open)
   > 前方のドアや障害物の対応に関する教育用パッケージ
 
