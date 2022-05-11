@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(smach_samples_noetic)
+project(smach_samples)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
