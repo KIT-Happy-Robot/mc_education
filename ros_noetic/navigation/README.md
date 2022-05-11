@@ -40,7 +40,8 @@ rosrun navigation set_location.py
 rosservice call /set_location_server "state: ''
 name: ''"
 ```
-
 任意の名前で作業を続行してください。
+</br>
+
 ### [basic_navigation.py](src/basic_navigation.py)
 ### [simple_navigation.py](src/simple_navigation.py)
