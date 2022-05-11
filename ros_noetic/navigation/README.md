@@ -29,7 +29,7 @@
 | :---: | :---: |
 | 任意の名前(ex. shelfとかtableとか) | 指定した名前でオブジェクトの座標登録 or マップ保存 |
 
-#### 実行
+#### 実行方法
 サービスサーバを立ち上げます。
 ```
 rosrun navigation set_location.py
@@ -43,5 +43,20 @@ name: ''"
 任意の名前で作業を続行してください。
 </br>
 
-### [basic_navigation.py](src/basic_navigation.py)
-### [simple_navigation.py](src/simple_navigation.py)
+### basic_navigation.py
+[basic_navigation.py](src/basic_navigation.py)の使用方法を説明します。
+#### 実行方法
+ノードを実行します。
+```
+rosrun navigation basic_navigation.py
+```
+ゴールまで実機が動きます。
+
+### simple_navigation.py
+[simple_navigation.py](src/simple_navigation.py)の使用方法を説明します。
+#### 実行方法
+ノードを実行します。
+```
+rosrun navigation simple_navigation.py
+```
+ゴールまで実機が動きます。
