@@ -29,5 +29,18 @@
 | :---: | :---: |
 | 任意の名前(ex. shelfとかtableとか) | 指定した名前でオブジェクトの座標登録 or マップ保存 |
 
+#### 実行
+サービスサーバを立ち上げます。
+```
+rosrun navigation set_location.py
+```
+
+サービスサーバを呼び出します
+```
+rosservice call /set_location_server "state: ''
+name: ''"
+```
+
+任意の名前で作業を続行してください。
 ### [basic_navigation.py](src/basic_navigation.py)
 ### [simple_navigation.py](src/simple_navigation.py)
