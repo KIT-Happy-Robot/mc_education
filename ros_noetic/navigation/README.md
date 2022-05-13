@@ -12,7 +12,7 @@
 
 ## Usage
 ### set_location.py
-[set_location.py](src/set_location.py)の使用方法を説明します。
+[set_location.py](src/set_location.py)の使用方法を説明します。 </br>
 仕様は以下の通りです。
 #### Set Location
 |Communication|Name|Type|Request|Result|
