@@ -1,4 +1,4 @@
-# mc_education
+# navigation
 
 ## Overview
 実機によるNavigationの教育内容をまとめたROSパッケージ
