@@ -5,7 +5,7 @@
 #Author: Shunsuke Wada
 #Data: 2022/5/10
 #Memo: base_control.pyを用いて進む距離と速度を指定し走らせる
-#Memo: 自作モジュールの git cloneが必要
+#Memo: 自作モジュールのhappymimi_appsのgit cloneが必要
 #-----------------------------------------------------------
 import rospy 
 import roslib

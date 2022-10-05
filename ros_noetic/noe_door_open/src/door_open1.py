@@ -15,7 +15,7 @@ from sensor_msgs.msg import LaserScan
 
 class EnterRoom():
     def __init__(self):
-        #パブリッシャの宣言
+        #パブリッシャの宣言     'kobuki: '/cmd_vel_mux/input/teleop'
         self.twist_pub = rospy.Publisher('/vmegarover/diff_drive_controller/cmd_vel', Twist, queue_size = 1)
         #サブスクライバーの宣言
         rospy.Subscriber('/scan', LaserScan, self.laserCB)

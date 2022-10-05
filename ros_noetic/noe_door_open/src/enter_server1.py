@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #------------------------------------------------------------------------------------
 #Title: door_openのサービスサーバー
@@ -66,7 +66,7 @@ class EnterServer():
             print ("now_time = ", time.time() - start_time - stop_time - 1.0)
             #目標タイムに到達したときに実行
             if finish_time >= target_time:
-                print"enter_room finish [distance:", srv_req.distance, "velocity:", srv_req.velocity,"]"
+                print("enter_room finish [distance:", srv_req.distance, "velocity:", srv_req.velocity,"]")
                 return specify_valueResponse(result = True)
 
 if __name__ == '__main__':
