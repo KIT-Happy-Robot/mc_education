@@ -23,7 +23,7 @@ class BasicNavigation():
         # Service
         self.clear_costmap = rospy.ServiceProxy('/move_base/clear_costmaps', Empty)
         # Value
-        self.location_dict = rosparam.get_param('/navigation_sim/location_dict')
+        self.location_dict = rosparam.get_param('/navigation_sim/location/')
         self.location_name = 'NULL'
         self.location_list = []
 
